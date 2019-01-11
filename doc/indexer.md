@@ -11,4 +11,4 @@ Create the post request:
 - The request body is defined in `indexer.json`
 
   Post request: 
-     ![](img/create_indexer.jpg)
+     ![](img/create_Indexer.jpg)
