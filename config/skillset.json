@@ -1,0 +1,26 @@
+  {
+    "name": "purposeenricher",
+    "description": "translate tx purpose to English",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+        "description": "Our English translator custom skill",
+        "uri": "!! Edit - Here goes my Function App Skill URI",
+        "batchSize": 1,
+        "context": "/document",
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/purpose"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "text",
+            "targetName": "translatedPurpose"
+          }
+        ]
+      }
+    ]
+  }
+

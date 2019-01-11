@@ -1,0 +1,7 @@
+{
+  "name": "txdatasource",
+  "description": "Sample Tx Data",
+  "type": "azureblob",
+  "credentials": { "connectionString": "!! Edit - Here goes my Connection string to the blob" },
+  "container": { "name": "txdata" }
+}  

@@ -1,0 +1,30 @@
+﻿{
+  "name": "txindexer",
+  "targetIndexName": "txindex",
+  "dataSourceName": "txdatasource",
+  "skillsetName": "purposeenricher",
+  "parameters": {
+    "batchSize": 1,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "configuration": {
+      "parsingMode": "jsonArray",
+      "dataToExtract": "contentAndMetadata",
+      "imageAction": "none"
+    }
+  },
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/translatedPurpose",
+      "targetFieldName": "translatedPurpose"
+    },
+    {
+      "sourceFieldName": "/document/amount/value",
+      "targetFieldName": "value"
+    },
+    {
+      "sourceFieldName": "/document/amount/currency",
+      "targetFieldName": "currency"
+    }
+  ]
+}
