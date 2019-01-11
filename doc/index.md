@@ -11,5 +11,5 @@ Create the post request:
 - The request body is defined in `index.json`
 
   Postman Post Request: 
-   ![](img/create_index.jpg)
-   ![](img/create_index_2.jpg)
+   ![](img/create_Index.jpg)
+   ![](img/create_Index_2.jpg)
